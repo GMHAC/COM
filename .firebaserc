@@ -1,8 +1,5 @@
 {
   "projects": {
-    "default": "gen-lang-client-0506048076",
-    "firebase use --add": "rfims-s"
-  },
-  "targets": {},
-  "etags": {}
+    "default": "rfims-s"
+  }
 }
