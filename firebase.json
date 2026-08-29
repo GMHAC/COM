@@ -12,13 +12,6 @@
     ],
     "rewrites": [
       {
-        "source": "/api/**",
-        "run": {
-          "serviceId": "rizvi-foms-api",
-          "region": "asia-south1"
-        }
-      },
-      {
         "source": "**",
         "destination": "/index.html"
       }
