@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: rizvi-foms-api
+    runtime: node
+    plan: free
+    branch: main
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: APP_VERSION
+        value: 2026.08.27-enterprise
+      - key: CORS_ORIGIN
+        value: https://rfims-s.web.app
+      - key: JWT_SECRET
+        generateValue: true
