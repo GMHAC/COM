@@ -26,10 +26,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
-
-      - name: Install Firebase CLI
-        run: npm install -g firebase-tools@latest
 
       - name: Deploy Firebase Hosting
-        run: firebase deploy --only hosting --project rfims-s --non-interactive
+        run: npx --yes firebase-tools@15.28.1 deploy --only hosting --project rfims-s --non-interactive
